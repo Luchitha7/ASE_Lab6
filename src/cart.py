@@ -31,7 +31,7 @@ class Cart:
         return sum(item.subtotal for item in self._items.values())
 
     def _validate_quantity(self, quantity: int) -> None:
-        # Keep error message exact for tests.
+        
         if not isinstance(quantity, int) or quantity <= 0:
             raise ValueError("Quantity must be a positive integer")
 
@@ -49,7 +49,7 @@ class Cart:
             raise ValueError(f"Insufficient inventory for SKU '{sku}'")
 
     def add_item(self, sku: str, quantity: int) -> None:
-        # Requirement B/C: validate, create line item, and optionally reserve inventory.
+        # Requirement B and C: validate, create line item, and optionally reserve inventory.
         self._validate_quantity(quantity)
         product = self._get_product_or_raise(sku)
 
