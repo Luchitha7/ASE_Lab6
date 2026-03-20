@@ -1,0 +1,22 @@
+# Python bytecode / build artifacts
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+.venv/
+
+# Pytest
+.pytest_cache/
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
