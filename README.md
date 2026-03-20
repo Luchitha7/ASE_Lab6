@@ -1,4 +1,4 @@
-# ASE Lab 6 - TDD 
+# ASE Lab 6 (TDD) - L.T Jayawardena (IT23631724) 
 
 Minimal e-commerce domain built using Test-Driven Development (TDD).
 Implements requirements A–F: Product/Catalog, Cart, Inventory reservation, Discount rules, Checkout/payment, and Order persistence.
