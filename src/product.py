@@ -1,9 +1,18 @@
 class Product:
     def __init__(self, sku: str, name: str, price: float):
-        # Placeholder for TDD start (RED): missing validation.
+        # Requirement A: validate inputs.
+        if not sku:
+            raise ValueError("SKU is required")
+        if not name:
+            raise ValueError("Name is required")
+        if price is None:
+            raise ValueError("Price is required")
+        if price < 0:
+            raise ValueError("Price must be non-negative")
+
         self.sku = sku
         self.name = name
-        self.price = price
+        self.price = float(price)
 
 
 class Catalog:
